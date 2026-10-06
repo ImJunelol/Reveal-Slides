@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Royal Velvet demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <!-- No built-in theme and no highlight.js theme: royal-velvet.css replaces both -->
+  <link rel="stylesheet" href="styles/royal-velvet.css">
+  <link rel="icon" type="image/x-icon" href="image-removebg-preview.png">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="center">
+        <section>
+        <div class = "reveal">
+          <img src="images/The OG Logo.png" height="150" width="150">
+        <h1>Reforma Laboral</h1>
+        <p class="muted">ley 2466 de 2025</p>
+        </div>
+        </section>
+        <section>
+          <ul class = "fragment">
+            <li>Daniel Gutierrez</li>
+            <li>Diego Henao</li>
+            <li>Yanpol Parada</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>Text and emphasis</h2>
+        <p>Regular text with <strong>bold</strong>, <em>italic</em>, <mark>highlight</mark>,
+           <del>strikethrough</del>, <code>inline code</code> and a
+           <a href="#/3">internal link</a> or an <a href="https://revealjs.com">external link</a>.</p>
+        <blockquote>
+          A quote sits on a slightly lighter layer with a red edge.
+          <cite>Someone wise</cite>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Nested lists</h2>
+        <ul>
+          <li class="fragment">Level one
+            <ul>
+              <li class="fragment">Level two
+                <ul><li class="fragment">Level three</li></ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Code</h2>
+        <pre><code class="language-python" data-trim data-line-numbers="1-2|4-5">
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+for n in ["Ada", "Alan"]:
+    print(greet(n))  # 42
+        </code></pre>
+      </section>
+
+      <section>
+        <h2>Tables</h2>
+        <table>
+          <thead><tr><th>Gate</th><th>Expression</th><th>Output</th></tr></thead>
+          <tbody>
+            <tr><td>AND</td><td>A · B</td><td>1 only if both are 1</td></tr>
+            <tr><td>OR</td><td>A + B</td><td>1 if either is 1</td></tr>
+            <tr><td>NOT</td><td>A'</td><td>Inverts the input</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Layout helpers</h2>
+        <div class="two-col">
+          <div class="card">A <code>.card</code> on the left</div>
+          <div class="card">And another on the right</div>
+        </div>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </section>
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+</body>
+</html>
